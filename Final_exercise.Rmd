@@ -42,3 +42,21 @@ gap.in <- read.csv("https://raw.githubusercontent.com/resbaz/r-novice-gapminder-
 plot(gap.in$year[gap.in$country %in% c("China", "Argentina", "Brazil")], gap.in$gdpPercap[gap.in$country %in% c("China", "Argentina", "Brazil")], xlab = "Year", ylab = "GDP")
 ```
 
+```{r mean}
+mean(gap.in$lifeExp[gap.in$country == "China"])
+mean(gap.in$lifeExp[gap.in$country == "Argentina"])
+mean(gap.in$lifeExp[gap.in$country == "Brazil"])
+```
+
+```{r min}
+min(gap.in$lifeExp[gap.in$country == "China"])
+min(gap.in$lifeExp[gap.in$country == "Argentina"])
+min(gap.in$lifeExp[gap.in$country == "Brazil"])
+```
+
+```{r max}
+max(gap.in$lifeExp[gap.in$country == "China"])
+max(gap.in$lifeExp[gap.in$country == "Argentina"])
+max(gap.in$lifeExp[gap.in$country == "Brazil"])
+```
+
